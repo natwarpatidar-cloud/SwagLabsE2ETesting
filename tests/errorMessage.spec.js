@@ -3,7 +3,7 @@ import { test, chromium, expect } from "@playwright/test";
 
 test("Verify proper error message is displayed.", async () => {
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     chromiumSandbox: false,
     args: ["--disable-extensions", "--disable-file-system"],
   });
